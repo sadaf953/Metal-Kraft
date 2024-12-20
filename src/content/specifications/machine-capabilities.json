@@ -1,0 +1,49 @@
+{
+  "milling": {
+    "axes": {
+      "current": 3,
+      "scalable_to": 5,
+      "description": "3-axis milling, scalable to 5-axis for complex parts"
+    },
+    "spindle_speed": {
+      "rpm": 12000,
+      "description": "12,000 RPM milling capability"
+    },
+    "precision": {
+      "tolerance": "±0.01",
+      "unit": "mm",
+      "description": "High-precision milling with ±0.01 mm tolerance"
+    }
+  },
+  "turning": {
+    "spindle_speed": {
+      "rpm": 4000,
+      "description": "4,000 RPM turning capability"
+    },
+    "precision": {
+      "tolerance": "±0.005",
+      "unit": "mm",
+      "description": "High-precision turning with ±0.005 mm tolerance for cylinders"
+    }
+  },
+  "material_compatibility": {
+    "metals": [
+      "aluminum",
+      "steel",
+      "brass"
+    ],
+    "other": [
+      "plastics"
+    ]
+  },
+  "quality_assurance": {
+    "equipment": [
+      "CMM (Coordinate Measuring Machines)"
+    ],
+    "capabilities": [
+      "Consistent production monitoring",
+      "Defect detection",
+      "Quality verification"
+    ]
+  }
+}
