@@ -21,7 +21,7 @@ module.exports = {
         },
       },
       fontFamily: {
-        sans: ['var(--font-custom)', ...defaultTheme.fontFamily.sans],
+        sans: ['var(--font-custom)', 'Goldman', ...defaultTheme.fontFamily.sans],
       },
     },
   },

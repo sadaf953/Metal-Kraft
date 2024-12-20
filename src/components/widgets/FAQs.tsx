@@ -14,40 +14,29 @@ const FAQs = ({ header, tabs, id, hasBackground = false }: FAQsProps) => {
     <WidgetWrapper id={id ? id : ''} hasBackground={hasBackground} containerClass="max-w-7xl">
       {header && <Headline header={header} titleClass="text-3xl sm:text-4xl" />}
       
-      <div className="mt-12 grid grid-cols-12 gap-8">
-        {/* Left sidebar with tabs */}
-        <div className="col-span-3">
-          <div className="flex flex-col">
-            {tabs?.map((tab, index) => (
-              <button
-                key={index}
-                onClick={() => setActiveTab(index)}
-                className={`text-left transition-colors border-b border-solid border-slate-200 dark:border-slate-700 py-5 px-4 ${
-                  activeTab === index
-                    ? 'bg-white dark:bg-gray-900'
-                    : 'bg-gray-50 hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700'
-                }`}
-              >
-                <div className="flex items-center justify-between">
-                  <span className="text-base font-medium">{tab.link.label}</span>
-                  {activeTab === index ? (
-                    <IconMinus className="h-6 w-6 text-primary-600 dark:text-slate-200" />
-                  ) : (
-                    <IconPlus className="h-6 w-6 text-primary-600 dark:text-slate-200" />
-                  )}
-                </div>
-              </button>
-            ))}
-          </div>
+      <div className="mt-12 flex flex-col gap-8">
+        {/* Top navigation tabs */}
+        <div className="flex flex-wrap gap-2 justify-center">
+          {tabs?.map((tab, index) => (
+            <button
+              key={index}
+              onClick={() => setActiveTab(index)}
+              className={`px-6 py-3 rounded-lg transition-colors ${
+                activeTab === index
+                  ? 'bg-[#112745] text-white'
+                  : 'bg-gray-100 hover:bg-gray-200 text-[#112745]'
+              }`}
+            >
+              <span className="text-base font-medium whitespace-nowrap">{tab.link.label}</span>
+            </button>
+          ))}
         </div>
 
-        {/* Right side with FAQ items */}
-        <div className="col-span-9">
+        {/* FAQ items */}
+        <div className="w-full max-w-3xl mx-auto">
           <Collapse
             items={tabs ? tabs[activeTab].items : []}
             classCollapseItem="border-b border-solid border-slate-200 dark:border-slate-700 py-5"
-            iconUp={<IconMinus className="h-6 w-6 text-primary-600 dark:text-slate-200" />}
-            iconDown={<IconPlus className="h-6 w-6 text-primary-600 dark:text-slate-200" />}
           />
         </div>
       </div>

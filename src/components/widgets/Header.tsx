@@ -62,9 +62,9 @@ const Header = () => {
       } ${isToggleMenuOpen ? 'h-screen md:h-auto' : 'h-auto'}`}
       id="header"
     >
-      <div className="mx-auto w-full max-w-7xl md:flex md:justify-between md:py-3.5 md:px-4 text-[#112745]">
+      <div className="mx-auto w-full max-w-7xl md:flex md:justify-between md:py-2 md:px-4 text-[#112745]">
         <div
-          className={`flex justify-between py-3 px-3 md:py-0 md:px-0 ${
+          className={`flex justify-between py-1.5 px-3 md:py-0 md:px-0 ${
             isToggleMenuOpen
               ? 'md:bg-transparent md:dark:bg-transparent md:border-none bg-gray-50 border-b border-gray-200'
               : ''
@@ -77,7 +77,7 @@ const Header = () => {
               isToggleMenuOpen ? handleToggleMenuOnClick() : setIsDropdownOpen(updatedIsDropdownOpen as boolean[])
             }
           >
-            <span className="text-[#112745] font-bold text-xl">Metalkraft</span>
+            <span className="text-[#112745] font-bold text-3xl whitespace-nowrap">MetalKraft CNC</span>
           </Link>
           <div className="flex items-center md:hidden">
             <ToggleMenu handleToggleMenuOnClick={handleToggleMenuOnClick} isToggleMenuOpen={isToggleMenuOpen} />

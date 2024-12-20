@@ -6,10 +6,14 @@ import Providers from '~/components/atoms/Providers';
 import Header from '~/components/widgets/Header';
 import Footer from '~/components/widgets/Footer';
 
-import { Inter as CustomFont } from 'next/font/google';
+import { Goldman as CustomFont } from 'next/font/google';
 import '~/assets/styles/base.css';
 
-const customFont = CustomFont({ subsets: ['latin'], variable: '--font-custom' });
+const customFont = CustomFont({ 
+  subsets: ['latin'], 
+  weight: ['400', '700'], 
+  variable: '--font-custom' 
+});
 
 export interface LayoutProps {
   children: React.ReactNode;

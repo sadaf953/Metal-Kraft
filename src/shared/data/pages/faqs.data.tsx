@@ -5,11 +5,8 @@ import { IconMinus, IconPlus } from '@tabler/icons-react';
 // Hero data on FAQs page *******************
 export const heroFaqs: HeroProps = {
   title: 'Frequently Asked Questions',
-  subtitle: (
-    <>
-      Find answers to common questions about our CNC machining services.
-    </>
-  ),
+  subtitle: 'Find answers to common questions about our CNC machining services',
+  className: 'text-center pt-12 md:pt-16',
   tagline: 'FAQs',
 };
 

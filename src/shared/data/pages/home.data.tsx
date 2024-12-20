@@ -45,7 +45,7 @@ import {
   TestimonialsProps,
 } from '~/shared/types';
 import heroImg from '~/assets/images/hero.jpg';
-import millingImg from '~/assets/images/CNC MILLING.png';
+import millingImg from '~/assets/images/cnc-milling.png';
 import turningImg from '~/assets/images/turning.png';
 
 // Hero data on Home page *******************
@@ -230,9 +230,6 @@ export const featuresAcceptedMaterials: FeaturesProps = {
   ],
 };
 
-
-
-
 // Industry Solutions data on Home page *******************
 export const features2Home: FeaturesProps = {
   id: 'features2-on-home',
@@ -308,21 +305,44 @@ export const features2Home: FeaturesProps = {
 };
 
 export const featuresQualityStandards: FeaturesProps = {
-  id: 'features-quality-standards',
+  id: 'features-quality',
   hasBackground: false,
-  columns: 2,
-  className: 'bg-[#112745] text-white py-8',
+  header: {
+    title: 'Commitment to Excellence',
+    subtitle: 'Our dedication to quality is driven by advanced methodologies including Lean Manufacturing and Six Sigma principles.',
+    tagline: 'Quality Standards'
+  },
   items: [
     {
-      title: 'ISO 9001:2015 Certified',
-      description: 'Maintaining highest quality standards',
+      title: 'Lean Manufacturing',
+      description: 'Implementing Just-in-Time production and waste reduction strategies to optimize efficiency while maintaining superior quality.',
+      icon: IconShieldCheck,
+    },
+    {
+      title: 'Six Sigma Certified',
+      description: 'Our processes follow Six Sigma methodologies, ensuring consistent quality and minimal defects in production.',
       icon: IconCertificate,
     },
     {
-      title: 'Advanced Inspection',
-      description: 'State-of-the-art measurement equipment',
-      icon: IconRuler,
+      title: 'Quality Control',
+      description: 'Rigorous inspection protocols and advanced measurement equipment guarantee precision in every component.',
+      icon: IconListCheck,
     },
+    {
+      title: 'Continuous Improvement',
+      description: 'Regular process audits and Kaizen practices ensure we maintain industry-leading quality standards.',
+      icon: IconHeartRateMonitor,
+    },
+    {
+      title: 'ISO 9001:2015',
+      description: 'Certified quality management system ensuring consistent delivery of products that meet customer requirements.',
+      icon: IconClipboardList,
+    },
+    {
+      title: 'Statistical Process Control',
+      description: 'Advanced monitoring and analysis of manufacturing processes to maintain exceptional quality standards.',
+      icon: IconCalculator,
+    }
   ],
 };
 

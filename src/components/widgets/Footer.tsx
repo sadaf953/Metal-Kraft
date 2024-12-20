@@ -4,23 +4,22 @@ const Footer = () => {
   const { title, links, columns, socials, footNote } = footerData;
 
   return (
-    <footer className="relative border-t border-gray-200 dark:border-slate-800">
-      <div className="dark:bg-dark pointer-events-none absolute inset-0"></div>
-      <div className="relative mx-auto max-w-7xl px-4 dark:text-slate-300 sm:px-6">
+    <footer className="relative border-t border-gray-200 dark:border-slate-800 bg-gray-50 md:bg-gray-50/90 md:backdrop-blur-sm">
+      <div className="relative mx-auto max-w-7xl px-4 text-[#112745] sm:px-6">
         <div className="grid grid-cols-12 gap-4 gap-y-8 py-8 sm:gap-8 md:py-12">
           <div className="col-span-12 lg:col-span-4">
             <div className="mb-2">
-              <a className="inline-block text-xl font-bold" href="/">
+              <a className="inline-block text-xl font-bold text-[#112745]" href="/">
                 {title}
               </a>
             </div>
-            <div className="text-muted text-sm">
+            <div className="text-[#112745] text-sm">
               <ul className="mb-4 flex pr-2 rtl:pr-0 rtl:pl-2 md:order-1 md:mb-0">
                 {links &&
                   links.map(({ label, href }, index) => (
                     <li key={`item-link-${index}`}>
                       <a
-                        className="duration-150 ease-in-out placeholder:transition hover:text-gray-700 hover:underline dark:text-gray-400"
+                        className="duration-150 ease-in-out placeholder:transition hover:text-gray-700 hover:underline text-[#112745]"
                         aria-label={label}
                         href={href}
                       >
@@ -34,13 +33,13 @@ const Footer = () => {
           </div>
           {columns.map(({ title, links }, index) => (
             <div key={`item-column-${index}`} className="col-span-6 md:col-span-3 lg:col-span-2">
-              <div className="mb-2 font-medium dark:text-gray-300">{title}</div>
+              <div className="mb-2 font-medium text-[#112745]">{title}</div>
               <ul className="text-sm">
                 {links &&
                   links.map(({ label, href }, index2) => (
                     <li key={`item-column-link-${index2}`} className="mb-2">
                       <a
-                        className="text-muted transition duration-150 ease-in-out hover:text-gray-700 hover:underline dark:text-gray-400"
+                        className="text-[#112745] transition duration-150 ease-in-out hover:text-gray-700 hover:underline"
                         aria-label={label}
                         href={href}
                       >
@@ -51,21 +50,29 @@ const Footer = () => {
               </ul>
             </div>
           ))}
+          {socials && (
+            <div className="col-span-12 md:col-span-3 lg:col-span-2">
+              <div className="mb-2 font-medium text-[#112745]">Social</div>
+              <ul className="text-sm">
+                {socials.map(({ label, href, icon: Icon }, index) => (
+                  <li key={`item-social-link-${index}`} className="mb-2">
+                    <a
+                      className="text-[#112745] transition duration-150 ease-in-out hover:text-gray-700 hover:underline"
+                      aria-label={label}
+                      href={href}
+                    >
+                      <div className="flex items-center">
+                        <Icon className="h-5 w-5 mr-2" />
+                        {label}
+                      </div>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
         </div>
-        <div className="py-6 md:flex md:items-center md:justify-between md:py-8">
-          <ul className="mb-4 flex md:order-1 md:ml-4 rtl:md:ml-0 rtl:md:mr-4 md:mb-0">
-            {socials.map(({ label, icon: Icon, href }, index) => (
-              <li key={`item-social-${index}`}>
-                <a
-                  className="text-muted inline-flex items-center rounded-lg p-2.5 text-sm hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-700"
-                  aria-label={label}
-                  href={href}
-                >
-                  {Icon && <Icon className="h-5 w-5" />}
-                </a>
-              </li>
-            ))}
-          </ul>
+        <div className="py-6 text-sm text-[#112745] border-t border-gray-200">
           {footNote}
         </div>
       </div>

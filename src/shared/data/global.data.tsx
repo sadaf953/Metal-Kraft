@@ -30,7 +30,7 @@ export const headerData: HeaderProps = {
       icon: IconChevronDown,
       links: [
         {
-          label: 'Machines',
+          label: 'Capabilities',
           href: '/#contentOne-on-home-one',
         },
         {
