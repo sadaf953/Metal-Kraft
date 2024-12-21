@@ -1,8 +1,6 @@
-import fs from 'fs/promises'; // Use fs.promises for async operations
+import fs from 'fs/promises';
 import path from 'path';
 import matter from 'gray-matter';
-import { remark } from 'remark';
-import html from 'remark-html';
 
 const BLOG_DIR = path.join(process.cwd(), 'src/content/blog');
 
@@ -50,13 +48,8 @@ export async function findPostBySlug(slug: string) {
     return null;
   }
 
-  const content = await fs.readFile(filepath, 'utf8');
-  const { data, content: markdown } = matter(content);
-
-  const processedContent = await remark()
-    .use(html)
-    .process(markdown);
-  const contentHtml = processedContent.toString();
+  const source = await fs.readFile(filepath, 'utf8');
+  const { data, content } = matter(source);
 
   return {
     slug,
@@ -65,6 +58,6 @@ export async function findPostBySlug(slug: string) {
     excerpt: data.excerpt,
     image: processImagePath(data.image),
     tags: data.tags || [],
-    content: contentHtml,
+    content: content,
   };
 }
