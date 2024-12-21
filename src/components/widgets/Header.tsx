@@ -77,7 +77,7 @@ const Header = () => {
               isToggleMenuOpen ? handleToggleMenuOnClick() : setIsDropdownOpen(updatedIsDropdownOpen as boolean[])
             }
           >
-            <span className="text-[#112745] font-bold text-3xl whitespace-nowrap">MetalKraft CNC</span>
+            <span className="text-[#112745] font-bold text-2xl whitespace-nowrap">MetalKraft CNC</span>
           </Link>
           <div className="flex items-center md:hidden">
             <ToggleMenu handleToggleMenuOnClick={handleToggleMenuOnClick} isToggleMenuOpen={isToggleMenuOpen} />
@@ -91,7 +91,7 @@ const Header = () => {
         >
           <ul
             ref={ref}
-            className="flex w-full flex-col mt-2 mb-36 md:m-0 text-xl md:w-auto md:flex-row md:self-center md:pt-0 md:text-base"
+            className="flex w-full flex-col mt-4 mb-36 md:m-0 text-lg md:w-auto md:flex-row md:self-center md:pt-0 md:text-base"
           >
             {links &&
               links.map(({ label, href, icon: Icon, links }, index) => (
@@ -99,27 +99,27 @@ const Header = () => {
                   {links && links.length ? (
                     <>
                       <button
-                        className="flex items-center px-4 py-3 font-medium transition duration-150 ease-in-out text-[#112745] hover:text-[#1e3c6b]"
+                        className="flex items-center justify-between w-full px-6 py-4 font-medium transition duration-150 ease-in-out text-[#112745] hover:text-[#1e3c6b]"
                         onClick={() => handleDropdownOnClick(index)}
                       >
-                        {label}{' '}
+                        {label}
                         {Icon && (
                           <Icon
                             className={`${
                               isDropdownOpen[index] ? 'rotate-180' : ''
-                            } ml-0.5 rtl:ml-0 rtl:mr-0.5 hidden h-3.5 w-3.5 md:inline text-[#112745]px-8`}
+                            } ml-0.5 rtl:ml-0 rtl:mr-0.5 h-4 w-4 text-[#112745]`}
                           />
                         )}
                       </button>
                       <ul
                         className={`${
-                          isDropdownOpen[index] ? 'block' : 'md:hidden'
-                        } rounded pl-4 font-medium drop-shadow-xl md:absolute md:min-w-[200px] md:bg-gray-50/90 md:pl-0 md:backdrop-blur-md md:border md:border-gray-200`}
+                          isDropdownOpen[index] ? 'block' : 'hidden'
+                        } rounded pl-10 font-medium drop-shadow-xl md:absolute md:min-w-[200px] md:bg-gray-50/90 md:pl-0 md:backdrop-blur-md md:border md:border-gray-200`}
                       >
                         {links.map(({ label: label2, href: href2 }, index2) => (
                           <li key={`item-link-${index2}`}>
                             <Link
-                              className="whitespace-no-wrap block py-2 px-5 first:rounded-t last:rounded-b text-[#112745] hover:text-[#1e3c6b] hover:bg-gray-100/10"
+                              className="whitespace-no-wrap block py-3 px-5 first:rounded-t last:rounded-b text-[#112745] hover:text-[#1e3c6b] hover:bg-gray-100/10"
                               href={href2 as string}
                               onClick={() =>
                                 isToggleMenuOpen ? handleToggleMenuOnClick() : handleCloseDropdownOnClick(index)
@@ -133,7 +133,7 @@ const Header = () => {
                     </>
                   ) : (
                     <Link
-                      className="flex items-center px-8 py-3 font-medium transition duration-150 ease-in-out text-[#112745] hover:text-[#1e3c6b]"
+                      className="flex items-center px-6 py-4 font-medium transition duration-150 ease-in-out text-[#112745] hover:text-[#1e3c6b]"
                       href={href as string}
                       onClick={() => (isToggleMenuOpen ? handleToggleMenuOnClick() : handleDropdownOnClick(index))}
                     >
@@ -147,7 +147,7 @@ const Header = () => {
         <div
           className={`${
             isToggleMenuOpen ? 'block' : 'hidden'
-          } fixed bottom-0 left-0 w-full justify-end p-3 md:static md:mb-0 md:flex md:w-auto md:self-center md:p-0 md:bg-transparent md:border-none bg-gray-50 border-t border-gray-200`}
+          } fixed bottom-0 left-0 w-full justify-end p-4 md:static md:mb-0 md:flex md:w-auto md:self-center md:p-0 md:bg-transparent md:border-none bg-gray-50 border-t border-gray-200`}
         >
           <div className="flex w-full items-center justify-between md:w-auto">
             {showToggleTheme && <ToggleDarkMode />}
