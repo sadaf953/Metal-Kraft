@@ -5,7 +5,7 @@ import CTA from '../common/CTA';
 const Hero = ({ title, subtitle, tagline, callToAction, callToAction2, image, className }: HeroProps) => {
   return (
     <section id="heroOne" className={`bg-[#112745] ${className}`}>
-      <div className="mx-auto max-w-7xl px-4 sm:px-6">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 mx-4">
         <div className="py-12 md:py-20">
           <div className={`mx-auto max-w-7xl ${!image ? 'text-center' : 'grid grid-cols-1 md:grid-cols-2 gap-8 items-center'}`}>
             <div className={!image ? 'mx-auto max-w-3xl' : 'text-left'}>

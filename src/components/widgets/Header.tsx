@@ -57,12 +57,12 @@ const Header = () => {
 
   return (
     <header
-      className={`top-0 z-40 mx-auto w-full flex-none bg-gray-50 transition-all duration-100 ease-in md:bg-gray-50/90 md:backdrop-blur-sm ${
+      className={`top-0 z-40 mx-auto w-full flex-none bg-gray-50 transition-all duration-100 ease-in md:bg-gray-50/90 md:backdrop-blur-sm  ${
         isSticky ? 'sticky' : 'relative'
       } ${isToggleMenuOpen ? 'h-screen md:h-auto' : 'h-auto'}`}
       id="header"
     >
-      <div className="mx-auto w-full max-w-7xl md:flex md:justify-between md:py-2 md:px-4 text-[#112745]">
+      <div className="mx-auto w-full max-w-7xl md:flex md:justify-between md:py-4 md:px-8 text-[#112745] px-4">
         <div
           className={`flex justify-between py-1.5 px-3 md:py-0 md:px-0 ${
             isToggleMenuOpen
@@ -107,7 +107,7 @@ const Header = () => {
                           <Icon
                             className={`${
                               isDropdownOpen[index] ? 'rotate-180' : ''
-                            } ml-0.5 rtl:ml-0 rtl:mr-0.5 hidden h-3.5 w-3.5 md:inline text-[#112745]`}
+                            } ml-0.5 rtl:ml-0 rtl:mr-0.5 hidden h-3.5 w-3.5 md:inline text-[#112745]px-8`}
                           />
                         )}
                       </button>
@@ -133,7 +133,7 @@ const Header = () => {
                     </>
                   ) : (
                     <Link
-                      className="flex items-center px-4 py-3 font-medium transition duration-150 ease-in-out text-[#112745] hover:text-[#1e3c6b]"
+                      className="flex items-center px-8 py-3 font-medium transition duration-150 ease-in-out text-[#112745] hover:text-[#1e3c6b]"
                       href={href as string}
                       onClick={() => (isToggleMenuOpen ? handleToggleMenuOnClick() : handleDropdownOnClick(index))}
                     >

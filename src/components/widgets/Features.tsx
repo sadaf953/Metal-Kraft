@@ -26,7 +26,7 @@ const Features = ({ id, header, items, columns = 3, hasBackground = false, class
 
   return (
     <section className={bgColor}>
-      <WidgetWrapper id={id ? id : ''} hasBackground={false} containerClass="scroll-mt-16 max-w-6xl">
+      <WidgetWrapper id={id ? id : ''} hasBackground={false} containerClass="scroll-mt-16 max-w-6xl px-6">
         {header && <Headline header={header} titleClass="text-4xl md:text-5xl" />}
         <ItemGrid
           id={id}

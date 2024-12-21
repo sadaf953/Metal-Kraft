@@ -14,7 +14,7 @@ const FAQs = ({ header, tabs, id, hasBackground = false }: FAQsProps) => {
     <WidgetWrapper id={id ? id : ''} hasBackground={hasBackground} containerClass="max-w-7xl">
       {header && <Headline header={header} titleClass="text-3xl sm:text-4xl" />}
       
-      <div className="mt-12 flex flex-col gap-8">
+      <div className="mt-12 flex flex-col gap-8 px-6">
         {/* Top navigation tabs */}
         <div className="flex flex-wrap gap-2 justify-center">
           {tabs?.map((tab, index) => (

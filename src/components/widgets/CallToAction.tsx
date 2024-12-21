@@ -6,8 +6,8 @@ const CallToAction = ({ title, subtitle, callToAction, id, hasBackground = false
   const { text, href } = callToAction as CallToActionType;
 
   return (
-    <WidgetWrapper id={id ? id : ''} hasBackground={hasBackground} className={className} containerClass="">
-      <div className="card mx-auto max-w-3xl p-6 text-center">
+    <WidgetWrapper id={id ? id : ''} hasBackground={hasBackground} className={className} containerClass="px-8">
+      <div className="card mx-auto max-w-3xl p-6 text-center px-6">
         {title && (
           <h2 className="leading-tighter font-heading mb-4 text-4xl font-bold tracking-tighter md:text-4xl">{title}</h2>
         )}

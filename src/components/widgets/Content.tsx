@@ -19,7 +19,7 @@ const Content = ({
   <WidgetWrapper
     id={id ? id : ''}
     hasBackground={hasBackground}
-    containerClass={`max-w-7xl mx-auto ${isAfterContent ? 'py-0 md:py-0 lg:py-0 pb-12 md:pb-16 lg:pb-20' : ''}`}
+    containerClass={`max-w-7xl mx-auto ${isAfterContent ? 'py-0 md:py-0 lg:py-0 pb-12 md:pb-16 lg:pb-20 px-6' : ''}`}
   >
     <div className="w-full">
       {header && <Headline header={header} titleClass="text-3xl sm:text-5xl" />}

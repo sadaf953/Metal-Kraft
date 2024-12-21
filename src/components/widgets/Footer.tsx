@@ -4,7 +4,7 @@ const Footer = () => {
   const { title, links, columns, socials, footNote } = footerData;
 
   return (
-    <footer className="relative border-t border-gray-200 dark:border-slate-800 bg-gray-50 md:bg-gray-50/90 md:backdrop-blur-sm">
+    <footer className="relative border-t border-gray-200 dark:border-slate-800 bg-gray-50 md:bg-gray-50/90 md:backdrop-blur-sm px-4 ">
       <div className="relative mx-auto max-w-7xl px-4 text-[#112745] sm:px-6">
         <div className="grid grid-cols-12 gap-4 gap-y-8 py-8 sm:gap-8 md:py-12">
           <div className="col-span-12 lg:col-span-4">
