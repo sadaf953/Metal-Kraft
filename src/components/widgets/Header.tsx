@@ -62,7 +62,7 @@ const Header = () => {
       } ${isToggleMenuOpen ? 'h-screen md:h-auto' : 'h-auto'}`}
       id="header"
     >
-      <div className="mx-auto w-full max-w-7xl md:flex md:justify-between md:py-4 md:px-8 text-[#112745] px-4">
+      <div className="mx-auto w-full max-w-7xl md:flex md:justify-between md:py-2 md:px-8 text-[#112745] px-4">
         <div
           className={`flex justify-between py-1.5 px-3 md:py-0 md:px-0 ${
             isToggleMenuOpen

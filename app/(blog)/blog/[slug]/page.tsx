@@ -57,7 +57,7 @@ export default async function BlogPost({ params }: Props) {
             </svg>
             Back to Blog
           </Link>
-          <h1 className="mt-4 sm:mt-6 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#112745] tracking-tight">
+          <h1 className="mt-4 sm:mt-6 text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#112745] tracking-tight">
             {post.title}
           </h1>
           <div className="mt-3 sm:mt-4 flex flex-wrap justify-center gap-2">
@@ -96,11 +96,11 @@ export default async function BlogPost({ params }: Props) {
       {/* Content Section */}
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
         <article 
-          className="prose prose-sm sm:prose-base lg:prose-lg mx-auto
+          className="prose prose-xs sm:prose-sm lg:prose-base mx-auto
             prose-headings:font-bold prose-headings:text-[#112745] 
-            prose-h1:text-2xl sm:prose-h1:text-3xl lg:prose-h1:text-4xl prose-h1:mb-6 sm:prose-h1:mb-8
-            prose-h2:text-xl sm:prose-h2:text-2xl lg:prose-h2:text-3xl prose-h2:mt-8 sm:prose-h2:mt-12 prose-h2:mb-4 sm:prose-h2:mb-6
-            prose-h3:text-lg sm:prose-h3:text-xl lg:prose-h3:text-2xl prose-h3:mt-6 sm:prose-h3:mt-8 prose-h3:mb-3 sm:prose-h3:mb-4
+            prose-h1:text-xl sm:prose-h1:text-2xl lg:prose-h1:text-3xl prose-h1:mb-4 sm:prose-h1:mb-6
+            prose-h2:text-lg sm:prose-h2:text-xl lg:prose-h2:text-2xl prose-h2:mt-6 sm:prose-h2:mt-8 prose-h2:mb-3 sm:prose-h2:mb-4
+            prose-h3:text-base sm:prose-h3:text-lg lg:prose-h3:text-xl prose-h3:mt-4 sm:prose-h3:mt-6 prose-h3:mb-2 sm:prose-h3:mb-3
             prose-p:text-gray-700 prose-p:leading-relaxed prose-p:mb-4
             prose-a:text-[#1a3c69] prose-a:no-underline hover:prose-a:underline 
             prose-strong:text-[#112745] 

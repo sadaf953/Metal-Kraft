@@ -55,13 +55,13 @@ export default async function Blog() {
                     ))}
                   </div>
 
-                  <h2 className="mb-2 sm:mb-3 text-lg sm:text-xl font-bold leading-tight text-[#112745] decoration-2 transition-colors group-hover:text-[#1a3c69]">
+                  <h2 className="mb-2 sm:mb-3 text-base sm:text-lg lg:text-xl font-bold leading-tight text-[#112745] decoration-2 transition-colors group-hover:text-[#1a3c69]">
                     <Link href={`/blog/${slug}`} className="block">
                       {title}
                     </Link>
                   </h2>
 
-                  <p className="mb-4 flex-1 text-sm sm:text-base text-gray-600 line-clamp-3">{excerpt}</p>
+                  <p className="mb-4 flex-1 text-xs sm:text-sm text-gray-600 line-clamp-3">{excerpt}</p>
 
                   <div className="mt-auto flex items-center justify-between border-t border-gray-200 pt-4">
                     <time dateTime={publishDate} className="text-xs sm:text-sm text-gray-500">
