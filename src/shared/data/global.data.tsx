@@ -30,7 +30,7 @@ export const headerData: HeaderProps = {
         },
         {
           label: 'Industries',
-          href: '/#features-three-on-about',
+          href: '/#industry-solutions',
         },
       ],
     },

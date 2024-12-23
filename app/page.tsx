@@ -8,6 +8,7 @@ import Features2 from '~/components/widgets/Features2';
 import Steps from '~/components/widgets/Steps';
 import CallToAction from '~/components/widgets/CallToAction';
 import Content from '~/components/widgets/Content';
+import IndustrySolutions from '~/components/widgets/IndustrySolutions';
 
 import {
   callToActionHome,
@@ -17,7 +18,7 @@ import {
   contentHomeOne,
   contentHomeTwo,
   featuresAcceptedMaterials,
-  features3About,
+  industrySolutionsData,
 } from '~/shared/data/pages/home.data';
 
 export const metadata: Metadata = {
@@ -33,9 +34,10 @@ const Page = () => {
       <Content {...contentHomeTwo} />
       <Features {...featuresAcceptedMaterials} />
       <Steps {...stepsHome} />
+      <IndustrySolutions {...industrySolutionsData} />
       <CallToAction {...callToActionHome} />
     </>
-  );
+    );
 };
 
 export default Page;

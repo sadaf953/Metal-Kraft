@@ -88,20 +88,6 @@ export const heroHome: HeroProps = {
     src: heroImg,
     alt: 'Hero MetalKraft CNC',
   },
-  items: [
-    {
-      title: 'ISO 9001:2015 Certified',
-      description:
-        'Maintaining highest quality standards',
-      icon: IconComponents,
-    },
-    {
-      title: 'Advanced Inspection',
-      description:
-        'State-of-the-art measurement equipment',
-      icon: IconRuler,
-    },
-  ],
 };
 
 
@@ -120,49 +106,41 @@ export const featuresAcceptedMaterials: FeaturesProps = {
       title: 'Aluminum',
       description: 'Lightweight and corrosion-resistant',
       icon: IconRocket,
-      className: 'hover:bg-blue-50 dark:hover:bg-blue-900/20',
     },
     {
       title: 'Brass',
       description: 'Excellent machinability and conductivity',
       icon: IconSettings,
-      className: 'hover:bg-yellow-50 dark:hover:bg-yellow-900/20',
     },
     {
       title: 'Copper',
       description: 'High thermal and electrical conductivity',
       icon: IconHammer,
-      className: 'hover:bg-orange-50 dark:hover:bg-orange-900/20',
     },
     {
       title: 'Stainless Steel',
       description: 'Corrosion-resistant and durable',
       icon: IconShieldCheck,
-      className: 'hover:bg-gray-50 dark:hover:bg-gray-900/20',
     },
     {
       title: 'Tool Steel',
       description: 'High hardness and wear resistance',
       icon: IconTools,
-      className: 'hover:bg-red-50 dark:hover:bg-red-900/20',
     },
     {
       title: 'Alloy Steel',
       description: 'Enhanced strength and properties',
       icon: IconEngine,
-      className: 'hover:bg-purple-50 dark:hover:bg-purple-900/20',
     },
     {
       title: 'Mild Steel',
       description: 'Cost-effective and versatile',
       icon: IconBuildingBridge,
-      className: 'hover:bg-zinc-50 dark:hover:bg-zinc-900/20',
     },
     {
       title: 'Plastics',
       description: 'Versatile engineering polymers',
       icon: IconRecycle,
-      className: 'hover:bg-green-50 dark:hover:bg-green-900/20',
     }
   ],
 };
@@ -323,56 +301,69 @@ export const stepsHome: StepsProps = {
   },
 };
 
-export const features3About: FeaturesProps = {
-  id: 'features-three-on-about',
-  hasBackground: false,
+
+
+export const industrySolutionsData: FeaturesProps = {
+  id: 'industry-solutions',
+  hasBackground: true,
+  className: 'bg-custom-blue-medium',
   header: {
     title: 'Industry Solutions',
-    subtitle:
-      'Serving diverse industries with precision components',
+    subtitle: 'Serving diverse industries with precision components',
   },
-  iconClass: 'w-5 h-5 p-1 bg-blue-50 rounded-sm dark:bg-slate-800',
   items: [
     {
       title: 'Aerospace',
-      description:
-        'High-precision components meeting aerospace standards',
-      icon: IconRocket,
+      description: 'High-precision components for aircraft and space applications',
+      image: {
+        src: '/images/industries/aerospace.jpeg',
+        alt: 'Aerospace Manufacturing'
+      }
     },
     {
       title: 'Automotive',
-      description:
-        'Quality parts for automotive applications',
-      icon: IconEngine,
+      description: 'Custom parts and prototypes for automotive manufacturers',
+      image: {
+        src: '/images/industries/automobile.jpeg',
+        alt: 'Automotive Parts Manufacturing'
+      }
     },
     {
       title: 'Medical',
-      description:
-        'Precision components for medical devices',
-      icon: IconHeartRateMonitor,
+      description: 'Precision medical devices and surgical instruments',
+      image: {
+        src: '/images/industries/medicine.png',
+        alt: 'Medical Device Manufacturing'
+      }
     },
     {
-      title: 'Military and Defense',
-      description:
-        'Mission-critical components with strict specifications',
-      icon: IconShieldCheck,
+      title: 'Electronics',
+      description: 'High-precision electronic components and assemblies',
+      image: {
+        src: '/images/industries/electronics.jpeg',
+        alt: 'Electronics Manufacturing'
+      }
     },
     {
-      title: 'Consumer Goods',
-      description:
-        'High-quality parts for consumer products',
-      icon: IconBuildingFactory2,
+      title: 'Food Processing',
+      description: 'Specialized equipment for food processing industry',
+      image: {
+        src: '/images/industries/food.jpeg',
+        alt: 'Food Processing Equipment'
+      }
     },
     {
       title: 'Robotics and Automation',
-      description:
-        'Precision parts for robotic systems and automation equipment',
-      icon: IconRobot,
-    },
-  ],
+      description: 'Precision parts for robotic systems and automation equipment',
+      image: {
+        src: '/images/industries/robotics.jpeg',
+        alt: 'Robotics Manufacturing'
+      }
+    }
+  ]
 };
 
-// Call to Action data on Home page *******************
+   
 export const callToActionHome: CallToActionProps = {
   id: 'cta-home',
   hasBackground: true,
