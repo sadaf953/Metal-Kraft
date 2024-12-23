@@ -33,7 +33,6 @@ const Page = () => {
       <Content {...contentHomeTwo} />
       <Features {...featuresAcceptedMaterials} />
       <Steps {...stepsHome} />
-      <Features {...features3About} />
       <CallToAction {...callToActionHome} />
     </>
   );

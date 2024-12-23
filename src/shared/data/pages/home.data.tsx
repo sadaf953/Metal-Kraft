@@ -104,30 +104,7 @@ export const heroHome: HeroProps = {
   ],
 };
 
-// Removed Features data for "Why Choose MetalKraft CNC"
-// export const featuresHome: FeaturesProps = {
-//   id: 'features-on-home',
-//   hasBackground: true,
-//   columns: 3,
-//   className: 'bg-[#203352]',
-//   header: {
-//     title: (
-//       <>Why Choose <span className="whitespace-nowrap">MetalKraft CNC</span></>
-//     ),
-//     subtitle:
-//       "Experience excellence in precision manufacturing with our state-of-the-art CNC capabilities, industry expertise, and commitment to quality.",
-//     tagline: 'Features',
-//     className: 'text-gray-100',
-//   },
-//   items: [
-//     { title: 'State-of-the-Art CNC Machinery', description: 'Our Vertical Machining Centers (VMCs) and CNC Turning Machines deliver unmatched accuracy, reliability, and efficiency for diverse applications.', icon: IconComponents, className: 'text-gray-100', },
-//     { title: 'Tailored to Your Needs', description: 'We provide bespoke solutions from high-precision turning to prototype development, ensuring your project meets industry-specific requirements.', icon: IconListCheck, className: 'text-gray-100', },
-//     { title: 'Exceeding Industry Standards', description: 'With a commitment to quality, MetalKraft CNC adheres to stringent inspection protocols, ensuring products meet and exceed client expectations.', icon: IconCheck, className: 'text-gray-100', },
-//     { title: 'Efficient and Timely Delivery', description: 'Our streamlined workflows and advanced CAD/CAM integrations ensure projects are completed on schedule without compromising precision.', icon: IconRocket, className: 'text-gray-100', },
-//     { title: 'Environmentally Conscious Manufacturing', description: 'We integrate eco-friendly practices into our machining processes, from resource-efficient operations to effective waste management.', icon: IconArrowsRightLeft, className: 'text-gray-100', },
-//     { title: 'Client-Centered Collaboration', description: 'We work closely with clients to develop innovative machining solutions, fostering long-term partnerships.', icon: IconBulb, className: 'text-gray-100', },
-//   ],
-// };
+
 
 export const featuresAcceptedMaterials: FeaturesProps = {
   id: 'features-accepted-materials',
@@ -190,79 +167,6 @@ export const featuresAcceptedMaterials: FeaturesProps = {
   ],
 };
 
-// Industry Solutions data on Home page *******************
-export const features2Home: FeaturesProps = {
-  id: 'features2-on-home',
-  hasBackground: true,
-  columns: 3,
-  header: {
-    title: 'Industry Solutions',
-    subtitle: 'Expertise in precision manufacturing for diverse industries',
-    tagline: 'Industry Solutions',
-  },
-  items: [
-    {
-      title: 'Aerospace',
-      description:
-        'Precision components for aircraft, spacecraft, and defense applications.',
-      icon: IconComponents,
-      callToAction: {
-        text: 'Learn more',
-        href: '/industries/aerospace',
-      },
-    },
-    {
-      title: 'Automotive',
-      description:
-        'High-performance components for the automotive industry, from prototypes to production runs.',
-      icon: IconListCheck,
-      callToAction: {
-        text: 'Learn more',
-        href: '/industries/automotive',
-      },
-    },
-    {
-      title: 'Medical',
-      description:
-        'Precision components for medical devices, implants, and equipment.',
-      icon: IconCheck,
-      callToAction: {
-        text: 'Learn more',
-        href: '/industries/medical',
-      },
-    },
-    {
-      title: 'Energy',
-      description:
-        'Components for renewable energy systems, including solar, wind, and hydroelectric power.',
-      icon: IconRocket,
-      callToAction: {
-        text: 'Learn more',
-        href: '/industries/energy',
-      },
-    },
-    {
-      title: 'Consumer Products',
-      description:
-        'Precision components for consumer goods, from electronics to household appliances.',
-      icon: IconArrowsRightLeft,
-      callToAction: {
-        text: 'Learn more',
-        href: '/industries/consumer-products',
-      },
-    },
-    {
-      title: 'Industrial Equipment',
-      description:
-        'Components for industrial machinery, including pumps, valves, and gearboxes.',
-      icon: IconBulb,
-      callToAction: {
-        text: 'Learn more',
-        href: '/industries/industrial-equipment',
-      },
-    },
-  ],
-};
 
 export const featuresQualityStandards: FeaturesProps = {
   id: 'features-quality',
