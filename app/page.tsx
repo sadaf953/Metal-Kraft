@@ -11,7 +11,6 @@ import Content from '~/components/widgets/Content';
 
 import {
   callToActionHome,
-  featuresHome,
   featuresQualityStandards,
   heroHome,
   stepsHome,
@@ -30,7 +29,6 @@ const Page = () => {
     <>
       <Hero {...heroHome} />
       <Features {...featuresQualityStandards} />
-      <Features {...featuresHome} />
       <Content {...contentHomeOne} />
       <Content {...contentHomeTwo} />
       <Features {...featuresAcceptedMaterials} />
